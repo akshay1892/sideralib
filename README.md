@@ -112,7 +112,7 @@ kundli = astrochart.Chart(data.planets_rashi()).lagnaChart() # returns list with
 
 
 
-# Installl
+# Install
 ```   
 pip install sideralib
 ```   
@@ -123,3 +123,35 @@ then cd to the folder and enter the command:
 ```   
 pip install .
 ```   
+
+
+**Linux install note**
+
+If you get an error like `Python.h: No such file or directory` while installing, it means the Python development headers are missing.
+
+Try installing them using your distro’s package manager:
+
+* **Fedora / RHEL / Rocky / AlmaLinux**
+
+  ```bash
+  sudo dnf install python3-devel
+  ```
+
+* **Ubuntu / Debian**
+
+  ```bash
+  sudo apt install python3-dev
+  ```
+
+* **Arch Linux**
+
+  ```bash
+  sudo pacman -S python
+  ```
+
+After installing, retry the installation command.
+
+
+
+
+
